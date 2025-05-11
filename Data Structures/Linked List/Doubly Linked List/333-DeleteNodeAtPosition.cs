@@ -54,7 +54,7 @@ class LinkedList {
         Node nodeToDelete = temp.next;
         temp.next = temp.next.next; 
         if(temp.next.next != null)
-          temp.next.next.prev = temp.next;   
+          temp.next.next.prev = temp;   
         nodeToDelete = null;  
       } else {
         Console.Write("\nThe node is already null.");
